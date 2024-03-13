@@ -1,18 +1,17 @@
-# TetrisGui
+# Tetris GUI implementation using Phoenix LiveView.
+
+This project was developed while following  [Bruce Tate's Quadblock series](https://grox.io/series/quad).
+My implementation includes pause game  (triggered when pressing Esc key), next shape and Player Ranking features. Additionally, I added typespecs and some metaprogramming to my code base.
 
 To start your Phoenix server:
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+  * Install dependencies with `mix deps.get`
+  * Install Node.js dependencies with `cd assets && npm install`
+  * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit [`localhost:4000/tetris`](http://localhost:4000/tetris) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Learn more
+The low level game logic can be found [here](https://github.com/crisefd/tetris).
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+![Tetris in action](tetris-screen-shot.png)
