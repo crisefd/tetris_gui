@@ -27,26 +27,6 @@ defmodule TetrisGuiWeb.TetrisLive do
 
   @spec render(%{state: state}) :: rendered
 
-  # for {state, template} <-
-  #       [
-  #         starting: "starting.html",
-  #         game_over: "game_over.html",
-  #         playing: "initialized.html",
-  #         paused: "initialized.html"
-  #       ] do
-  #   def render(assigns = %{state: unquote(state)}) do
-  #     TetrisUiWeb.TetrisView.render(unquote(template), assigns)
-  #   end
-  # end
-
-  # def render(assigns = %{state: state}) do
-  #   ~H"""
-  #   <.starting :if={state == :starting} />
-  #   <.initialized :if={state == :playing || state == :paused }  />
-  #   <.game_over :if={state == :game_over} >
-  #   """
-  # end
-
   def render(assigns = %{state: :starting}) do
     ~H"""
     <.starting />
