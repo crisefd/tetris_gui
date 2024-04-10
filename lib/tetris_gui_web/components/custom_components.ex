@@ -110,13 +110,11 @@ defmodule TetrisGuiWeb.CustomComponents do
 
   @spec boxes(shape) :: binary
 
-  defp boxes([]), do: ""
+  # defp boxes([]), do: ""
 
-  defp boxes(shape) when is_binary(shape), do: ""
+  # defp boxes(shape) when is_binary(shape), do: ""
 
   defp boxes(colored_shape) when is_list(colored_shape) do
-    IO.inspect(colored_shape, label: "boxes > before mapping")
-
     colored_shape
     |> Enum.map(fn {x, y, color} ->
       box({x, y}, color)

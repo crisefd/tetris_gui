@@ -134,8 +134,6 @@ defmodule TetrisGuiWeb.TetrisLive do
       |> Shape.traslate({0, 1})
       |> Shape.with_color(next_brick_color)
 
-    # IO.inspect(shape, label: "Current")
-    # IO.inspect(next_shape, label: "Next")
     assign(socket, tetromino: shape, next: next_shape)
   end
 
